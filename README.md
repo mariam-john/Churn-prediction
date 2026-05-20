@@ -48,10 +48,11 @@ Classification Metrics (Precision, Recall, F1-score)
 🔹 Confusion Matrix (XGBoost)
 
  ### SMOTE Confusion Matrix
- ![SMOTE Confusion Matrix](outputs/Confusion_Matrix_with_SMOTE.png)
+ ![ SMOTE Confusion Matrix](outputs/Confusion_Matrix_with_SMOTE.png)
  
  ### XGBoost Optuna Confusion Matrix
- ![XGBoost Optuna](outputs/Confusion_Matrix_XGBoost_optuna.png)
+ ![ XGBoost Optuna Confusion Matrix](outputs/Confusion_Matrix_XGBoost_optuna.png)
+
  
  ### Scale Pos Weight Confusion Matrix
  ![Scale Pos Weight](outputs/Confusion_Matrix_scale_pos_weight.png)
@@ -62,7 +63,7 @@ Classification Metrics (Precision, Recall, F1-score)
 🔹 ROC Curves
 
 ### XGBoost Random Search ROC
-![XGB Random Search](outputs/ROC_for_XGB_randomsearch.png)
+![XGB Random Search](outputs/ROC_for_XGB_randomsearchpng.png)
 ### SMOTE ROC Curve
 ![SMOTE ROC](outputs/ROC_for_XGB_SMOTE.png)
 ### XGBoost Optuna ROC
