@@ -48,10 +48,11 @@ Classification Metrics (Precision, Recall, F1-score)
 🔹 Confusion Matrix (XGBoost)
 
  ### SMOTE Confusion Matrix
- ![SMOTE Confusion Matrix](outputs/Confusion_Matrix_SMOTE.png)
+ ![SMOTE Confusion Matrix](outputs/Confusion__Matrix_SMOTE.png)
  
  ### XGBoost Optuna Confusion Matrix
  ![XGBoost Optuna Confusion Matrix](outputs/Confusion_Matrix_XGBoostoptuna.png)
+ 
 
  
  ### Scale Pos Weight Confusion Matrix
