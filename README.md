@@ -49,28 +49,36 @@ Classification Metrics (Precision, Recall, F1-score)
 
  ### SMOTE Confusion Matrix
  ![SMOTE Confusion Matrix](outputs/Confusion_Matrix_with_SMOTE.png)
+ 
  ### XGBoost Optuna Confusion Matrix
  ![XGBoost Optuna](outputs/Confusion_Matrix_XGBoost_optuna.png)
+ 
  ### Scale Pos Weight Confusion Matrix
  ![Scale Pos Weight](outputs/Confusion_Matrix_scale_pos_weight.png)
+ 
  ### CatBoost Confusion Matrix
  ![CatBoost](outputs/Confusion_Matrix_with_CatBoostClassifier.png)
+ 
 🔹 ROC Curves
 
- ### CatBoost Confusion Matrix
-![CatBoost](outputs/Confusion_Matrix_with_CatBoostClassifier.png)
 ### XGBoost Random Search ROC
 ![XGB Random Search](outputs/ROC_for_XGB_randomsearch.png)
 ### SMOTE ROC Curve
 ![SMOTE ROC](outputs/ROC_for_XGB_SMOTE.png)
 ### XGBoost Optuna ROC
 ![XGB Optuna ROC](outputs/ROC_for_XGBoost_optuna.png)
+### CatBoostClassifier ROC
+![CatBoostClassifier ROC](outputs/ROC_for_CatBoostClassifier.png)
 
-🔹 SHAP Feature Importance
+
+🔹 SHAP plots
+
  ### SHAP Summary (XGBoost Optuna)
 ![SHAP](outputs/SHAP_XGBoost_optuna.png)
 ### SHAP Dependence Plot
 ![SHAP Dependence](outputs/Dependence_plot_shap_XGBoost_optuna.png)
+
+
 🔹 Final Ensemble Performance
 Final ROC-AUC Score: 91.69
 📁 Project Structure
