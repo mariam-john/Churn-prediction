@@ -12,16 +12,18 @@ The goal is to predict whether a customer will churn (leave the service) based o
 Since the dataset is highly imbalanced, special techniques were applied to ensure the model learns effectively from minority (churned) cases.
 
 ⚙️ Techniques Used
+
 📌 Handling Class Imbalance
 Class weighting using scale_pos_weight
 Oversampling using SMOTE
+
 🚀 Models Implemented
 XGBoost Classifier
 CatBoost Classifier
+
 🔧 Hyperparameter Tuning
 
 For XGBoost, two tuning strategies were compared:
-
 RandomizedSearchCV
 Optuna Optimization
 
@@ -45,13 +47,14 @@ Confusion Matrix
 Cross-validation (Stratified K-Fold)
 Classification Metrics (Precision, Recall, F1-score)
 📷 Results & Visualizations
-🔹 Confusion Matrix (XGBoost)
+
+🔹 Confusion Matrix 
 
  ### SMOTE Confusion Matrix
  ![SMOTE Confusion Matrix](outputs/Confusion__Matrix_SMOTE.png)
  
  ### XGBoost Optuna Confusion Matrix
- ![XGBoost Optuna Confusion Matrix](outputs/Confusion_Matrix_XGBoostoptuna.png)
+ ![XGBoost Optuna Confusion Matrix](outputs/Confusion_MatrixXGBoost_optuna.png)
  
 
  
@@ -92,6 +95,7 @@ Churn-Prediction/
 ├── outputs/
 ├── README.md
 ├── requirements.txt
+
 🛠️ Libraries Used
 pandas
 numpy
@@ -103,16 +107,16 @@ optuna
 shap
 matplotlib
 seaborn
+
 📌 Key Insights
-Month-to-month contracts show higher churn rates
-Lack of add-on services increases churn probability
-Electronic check users are more likely to churn
-Feature interactions significantly impact predictions (SHAP analysis confirms this)
-🧠 Conclusion
+Based on shap plots:
+ 1.Contract_Month-to-month (The Top Predictor)
 
-This project demonstrates how advanced boosting algorithms combined with imbalance handling techniques and hyperparameter optimization can significantly improve churn prediction performance.
+Actual Business Reason: Month-to-month customers have no switching costs. They can leave the moment a competitor offers a better deal or if they experience a single bad customer support interaction. They lack long-term friction or commitment.
 
-The final ensemble model provides better generalization compared to individual models.
+2. Also i can see that features are interacting. for example, Month-to-Month Contract nd Electronic Check, the customer who has both are actively think about how much money they are giving this company every 30 day.And because they are month-to-month, so they have chance to re think about their payment.
+
+3.Lack of add-on services increases churn probability
 
 🚀 Future Improvements
 Deploy model using Streamlit / Flask
